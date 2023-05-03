@@ -39,7 +39,7 @@ class Notepad(tk.Frame):
                 self.text.insert('end', file.read())
 
 
-    # Define a function for saving a file
+    #a function for saving a file
     def save_file(self):
         file_path = filedialog.asksaveasfilename(defaultextension='.txt')
         if file_path:
@@ -101,10 +101,6 @@ class memory_display(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        # Create the register display object as a vertically 
-        # scrollable text widget
-        # The contents of the register display will be updated by the CPU object 
-        # and is in the format of a numpy array
         self.register_display = tk.Text(self, bg='black', fg='white')
         self.register_display.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
